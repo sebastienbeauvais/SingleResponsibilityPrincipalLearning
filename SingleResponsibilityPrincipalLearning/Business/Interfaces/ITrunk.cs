@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace SingleResponsibilityPrincipalLearning.Business.Interfaces
 {
-    public interface IMusicSystem
+    public interface ITrunk
     {
-        void TurnOnMusicSystem();
-        void TurnOffMusicSystem();
-        void IncreaseVolume(int increase);
-        void DecreaseVolume(int decrease);
+        void Open();
+        void Close();
     }
 }

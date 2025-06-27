@@ -20,5 +20,22 @@ namespace SingleResponsibilityPrincipalLearning.Business.Car
             _trunk = trunk;
             _tripLogger = tripLogger;
         }
+        public void Drive()
+        {
+            _engine.Start();
+            _tripLogger.LogTrip();
+            _engine.TurnOff();
+        }
+        public void PlayMusic()
+        {
+            _musicSystem.TurnOnMusicSystem();
+            _musicSystem.IncreaseVolume(10);
+            _musicSystem.IncreaseVolume(4);
+        }
+        public void OpenTrunk()
+        {
+            _trunk.Open();
+            _trunk.Close();
+        }
     }
 }

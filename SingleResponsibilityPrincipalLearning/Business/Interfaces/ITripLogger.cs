@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace SingleResponsibilityPrincipalLearning.Business.Interfaces
 {
-    public interface IMusicSystem
+    public interface ITripLogger
     {
-        void TurnOnMusicSystem();
-        void TurnOffMusicSystem();
-        void IncreaseVolume(int increase);
-        void DecreaseVolume(int decrease);
+        void LogTrip();
     }
 }
