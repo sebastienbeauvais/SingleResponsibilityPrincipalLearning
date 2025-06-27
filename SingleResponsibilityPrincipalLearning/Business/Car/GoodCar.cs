@@ -20,19 +20,27 @@ namespace SingleResponsibilityPrincipalLearning.Business.Car
             _trunk = trunk;
             _tripLogger = tripLogger;
         }
-        public void Drive()
+        public void ExecuteGoodCarImplementation()
+        {
+            Console.WriteLine("Executing GoodCar Implementation...");
+            Drive();
+            PlayMusic();
+            OpenTrunk();
+            Console.WriteLine("GoodCar Implementation executed successfully.");
+        }
+        private void Drive()
         {
             _engine.Start();
             _tripLogger.LogTrip();
             _engine.TurnOff();
         }
-        public void PlayMusic()
+        private void PlayMusic()
         {
             _musicSystem.TurnOnMusicSystem();
             _musicSystem.IncreaseVolume(10);
-            _musicSystem.IncreaseVolume(4);
+            _musicSystem.DecreaseVolume(4);
         }
-        public void OpenTrunk()
+        private void OpenTrunk()
         {
             _trunk.Open();
             _trunk.Close();
