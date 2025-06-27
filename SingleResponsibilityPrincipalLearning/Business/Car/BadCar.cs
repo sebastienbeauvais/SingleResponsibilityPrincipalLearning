@@ -19,27 +19,27 @@ namespace SingleResponsibilityPrincipalLearning.Business.Car
             LogTrip();
             Console.WriteLine("BadCar Implementation executed successfully.");
         }
-        public void StartEngine()
+        private void StartEngine()
         {
             Console.WriteLine("Engine started");
         }
 
-        public void Drive()
+        private void Drive()
         {
             Console.WriteLine("Car is moving");
         }
 
-        public void PlayMusic()
+        private void PlayMusic()
         {
             Console.WriteLine("Playing music");
         }
 
-        public void OpenTrunk()
+        private void OpenTrunk()
         {
             Console.WriteLine("Trunk opened");
         }
 
-        public void LogTrip()
+        private void LogTrip()
         {
             Console.WriteLine("Logging trip data to cloud");
         }

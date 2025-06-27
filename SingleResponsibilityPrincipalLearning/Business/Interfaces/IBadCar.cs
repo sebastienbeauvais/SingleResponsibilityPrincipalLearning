@@ -9,10 +9,5 @@ namespace SingleResponsibilityPrincipalLearning.Business.Interfaces
     public interface IBadCar
     {
         void ExecuteBadCarImplementation();
-        void StartEngine();
-        void Drive();
-        void PlayMusic();
-        void OpenTrunk();
-        void LogTrip();
     }
 }
