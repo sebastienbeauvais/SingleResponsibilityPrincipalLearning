@@ -10,7 +10,7 @@ namespace SingleResponsibilityPrincipalLearning.Business.Interfaces
     {
         void TurnOnMusicSystem();
         void TurnOffMusicSystem();
-        void IncreaseVolume();
-        void DecreaseVolume();
+        void IncreaseVolume(int increase);
+        void DecreaseVolume(int decrease);
     }
 }

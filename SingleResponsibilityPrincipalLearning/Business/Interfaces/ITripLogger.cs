@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace SingleResponsibilityPrincipalLearning.Business.Interfaces
 {
-    public interface IBadCar
+    public interface ITripLogger
     {
-        void ExecuteBadCarImplementation();
-        void StartEngine();
-        void Drive();
-        void PlayMusic();
-        void OpenTrunk();
         void LogTrip();
     }
 }

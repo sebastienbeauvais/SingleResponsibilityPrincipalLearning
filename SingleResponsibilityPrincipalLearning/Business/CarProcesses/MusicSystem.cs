@@ -19,20 +19,25 @@ namespace SingleResponsibilityPrincipalLearning.Business.CarProcesses
         {
             Console.WriteLine("Music system has been turned off");
         }
-        public void IncreaseVolume()
+        public void IncreaseVolume(int volumeToIncrease)
         {
             var currentVolumn = volume;
-            if (currentVolumn < 10) 
+            if (currentVolumn < 10 && (currentVolumn + volumeToIncrease <= 10) )
             {
                 volume += 1;
                 Console.WriteLine("Volume set to: " + volume);
+            }
+            else if(currentVolumn + volumeToIncrease > 10)
+            {
+                volume = 10;
+                Console.WriteLine("Volume set to max: " + volume);
             }
             else
             {
                 Console.Write("Volume already set to max");
             }
         }
-        public void DecreaseVolume() 
+        public void DecreaseVolume(int volumeToDecrease) 
         {
             var currentVolumn = volume;
             if (currentVolumn > 0)

@@ -9,6 +9,16 @@ namespace SingleResponsibilityPrincipalLearning.Business.Car
 {
     public class BadCar : IBadCar
     {
+        public void ExecuteBadCarImplementation()
+        {
+            Console.WriteLine("Executing BadCar Implementation...");
+            StartEngine();
+            Drive();
+            PlayMusic();
+            OpenTrunk();
+            LogTrip();
+            Console.WriteLine("BadCar Implementation executed successfully.");
+        }
         public void StartEngine()
         {
             Console.WriteLine("Engine started");
